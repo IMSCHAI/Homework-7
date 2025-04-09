@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_GORILLA
+    schema: raw
+    tables:
+      - name: user_session_channel
+        description: "Session data including userId, sessionId, and channel"
+      - name: session_timestamp
+        description: "Session data including timestamp"
+  # - name: analytics
+  #   database: USER_DB_GORILLA
+  #   schema: analytics
+  #   tables:
+  #     - name: session_summary
+  #       description: "Session summary table"
+  #       # data tests:
+  #       #   - unique
+  #       #   - not_null
